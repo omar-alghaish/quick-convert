@@ -38,7 +38,7 @@ export default function FileDropzone({
   });
 
   return (
-    <div {...getRootProps()} className="dropzone-container p-4">
+    <div {...getRootProps()} className="dropzone-container p-4 py-20">
       <input {...getInputProps()} />
       <div className="dropzone-content flex flex-col items-center ">
         <FiUploadCloud className="h-12 w-12 text-muted-foreground" />

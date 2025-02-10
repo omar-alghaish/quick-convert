@@ -11,6 +11,9 @@ export const metadata = {
     "video converter",
     "free online converter",
   ],
+  icons: {
+    icon: ["/logo2.jpg"],
+  },
   // openGraph: {
   //   images: "https://yourdomain.com/og-image.jpg",
   // },
@@ -25,17 +28,17 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className=" bg-background  w-full">
-      <main className="flex flex-wrap">
-        <div className="flex-1 min-w-[70%]">
+    <div className="bg-background  w-full">
+      <main className="flex gap-4 flex-wrap">
+      <div className="w-[100vw] md:w-[300px] h-max  md:h-full md:md:min-h-screen">
+      <AdUnit adSlot="1234567890" responsive={true} />
+        </div>
+        <div className="flex-1  border-l border-r  md:min-h-screen">
           <FileConverter />
         </div>
 
-        <div className="w-[300px]">
-        <AdUnit
-        adSlot="1234567890" 
-        responsive={true}
-      />
+        <div className="w-[100vw] md:w-[300px] h-max md:h-full md:md:min-h-screen">
+          <AdUnit adSlot="1234567890" responsive={true} />
         </div>
       </main>
     </div>
