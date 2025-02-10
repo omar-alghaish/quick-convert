@@ -1,4 +1,4 @@
-import AdBanner from "@/components/common/AdBanner";
+import AdUnit from "@/components/common/AdBanner";
 import FileConverter from "@/components/common/FileConverter";
 
 export const metadata = {
@@ -32,11 +32,10 @@ export default function Home() {
         </div>
 
         <div className="w-[300px]">
-          <AdBanner
-            dataAdSlot={"333333333"}
-            dataAdFormat={"auto"}
-            dataFullWidthResponsive={true}
-          />
+        <AdUnit
+        adSlot="1234567890" 
+        responsive={true}
+      />
         </div>
       </main>
     </div>
