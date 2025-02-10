@@ -52,22 +52,24 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/logo2.jpg" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <SidebarProvider>
           <AppSidebar />
-          <div className="flex-1 max-w-[100vw] h-max overflow-x-hidden">
-            <header className="border-b">
+          <div className="flex-1  h-max ">
+            <header className="border-b w-full">
               <div className="flex gap-4 items-center justify-between p-4">
                 <div className="flex items-center gap-4">
                   <SidebarTrigger className=" top-0" />
                   <Logo />
                 </div>
-
                 <ThemeToggle />
               </div>
             </header>
-            {children}
+            <div>
+                       {children}
+   
+            </div>
           </div>
         </SidebarProvider>
       </body>

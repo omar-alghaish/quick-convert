@@ -28,18 +28,23 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="bg-background  w-full">
-      <main className="flex gap-4 flex-wrap">
-      <div className="w-[100vw] md:w-[300px] h-max  md:h-full md:md:min-h-screen">
-      <AdUnit adSlot="1234567890" responsive={true} />
+    <div className="bg-background w-full">
+      <main className="grid grid-cols-1 xl:grid-cols-[300px_1fr_300px]">
+        {/* Left Ad Unit */}
+        <div className=" md:block h-max lg:min-h-screen sticky top-0">
+          <AdUnit adSlot="1234567890" responsive={true} />
         </div>
-        <div className="flex-1  border-l border-r  md:min-h-screen">
+        {/* Main Content */}
+        <div className="h-max w-full border-l border-r lg:min-h-screen">
           <FileConverter />
         </div>
 
-        <div className="w-[100vw] md:w-[300px] h-max md:h-full md:md:min-h-screen">
+        {/* Right Ad Unit */}
+        <div className=" md:block h-max lg:min-h-screen  sticky top-0">
           <AdUnit adSlot="1234567890" responsive={true} />
         </div>
+
+      
       </main>
     </div>
   );
