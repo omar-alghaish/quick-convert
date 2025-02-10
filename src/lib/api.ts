@@ -3,7 +3,7 @@ export const convertFile = async (file: File, targetFormat: string) => {
     formData.append('file', file);
     formData.append('targetFormat', targetFormat);
   
-    const response = await fetch('https://admin-dashboard-mern-0tfn.onrender.com/api/files/convert', {
+    const response = await fetch('http://localhost:5000/api/files/convert', {
       method: 'POST',
       body: formData,
     });
@@ -17,7 +17,7 @@ export const convertFile = async (file: File, targetFormat: string) => {
   };
   
   export const downloadFile = async (filename: string) => {
-    const response = await fetch(`https://admin-dashboard-mern-0tfn.onrender.com/api/files/download/${filename}`);
+    const response = await fetch(`http://localhost:5000/api/files/download/${filename}`);
     if (!response.ok) throw new Error('Download failed');
     return response.blob();
   };
