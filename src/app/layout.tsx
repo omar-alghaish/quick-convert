@@ -3,8 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/common/AppSidebar";
-import AdSense from "@/components/common/AdSense";
-import Head from "next/head";
+// import AdSense from "@/components/common/AdSense";
+// import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,10 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-              <AdSense pId="ca-pub-4613977372487688" />
-  
-      </Head>
+      <head>
+              {/* <AdSense pId="ca-pub-4613977372487688" /> */}
+              <meta name="google-adsense-account" content="ca-pub-4613977372487688" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <SidebarProvider>
           <AppSidebar />
