@@ -20,15 +20,117 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Convert 200+ File Formats Online Free | PDF, Video, Image Converter",
+  title:
+    "Quick Convert | Free Online File Converter | 100+ Formats Supported | Fast & Easy",
   description:
-    "Instantly convert documents, images, videos, and audio between 200+ formats. Free online tool with no registration. Supports PDF, DOCX, MP4, MP3, and more.",
+    "Free online file converter supporting 100+ format conversions. Convert PDF to Word, MP4 to MP3, JPG to PNG, and more with 1-click. No registration, unlimited conversions, and military-grade encryption.",
   keywords: [
+    "quick convert",
     "file converter",
-    "convert PDF to Word",
+    "online file converter",
+    "free file converter",
+    "document converter",
+    "image converter",
     "video converter",
-    "free online converter",
+    "audio converter",
+    "ebook converter",
+    "archive converter",
+    "pdf converter",
+    "word converter",
+    "excel converter",
+    "powerpoint converter",
+    "image to pdf",
+    "pdf to word",
+    "word to pdf",
+    "mp4 to mp3",
+    "mp3 to wav",
+    "jpg to png",
+    "png to jpg",
+    "video converter online",
+    "audio converter online",
+    "document conversion",
+    "image conversion",
+    "video conversion",
+    "audio conversion",
+    "file conversion",
+    "convert files online",
+    "free online conversion",
+    "fast file converter",
+    "easy file converter",
+    "no registration file converter",
+    "convert documents",
+    "convert images",
+    "convert videos",
+    "convert audio",
+    "200+ file formats",
+    "pdf",
+    "docx",
+    "mp4",
+    "mp3",
+    "jpg",
+    "png",
+    "gif",
+    "webp",
+    "tiff",
+    "avi",
+    "mov",
+    "flv",
+    "webm",
+    "ogg",
+    "aac",
+    "flac",
+    "opus",
+    "wma",
+    "aiff",
+    "zip",
+    "rar",
+    "7z",
+    "tar",
+    "epub",
+    "mobi",
+    "azw3",
+    "csv",
+    "xlsx",
+    "ods",
+    "pptx",
+    "odp",
+    "html",
+    "txt",
+    "rtf",
+    "odt",
+    "svg",
+    "heif",
+    "jp2",
+    "pbm",
+    "pgm",
+    "ppm",
+    "xpm",
+    "tex",
+    "ac3",
+    "alac",
+    "amr",
+    "dts",
+    "mp2",
+    "ra",
+    "speex",
+    "midi",
   ],
+  openGraph: {
+    type: "website",
+    url: "https://quick-convert-666.vercel.app",
+    title:
+      "Free Online File Converter - 100+ Format Support | Instant Conversion",
+    description:
+      "Convert documents, videos, images, and audio between 100+ formats instantly. Mobile-friendly, secure, and 100% free. Supports PDF, MP4, DOCX, PNG, MP3, and more!",
+    images: [
+      {
+        url: "https://quick-convert-666.vercel.app/logo1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Online File Conversion Interface",
+      },
+    ],
+  },
   other: {
     "google-adsense-account": "ca-pub-4613977372487688", // Add this line
   },
@@ -66,10 +168,7 @@ export default function RootLayout({
                 <ThemeToggle />
               </div>
             </header>
-            <div>
-                       {children}
-   
-            </div>
+            <div>{children}</div>
           </div>
         </SidebarProvider>
       </body>
