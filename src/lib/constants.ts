@@ -144,6 +144,48 @@ export const CONVERSION_MAP: Record<string, string[]> = {
     "pgm",
     "ppm",
     "xpm",
+    "tga",
+    "heif",
+    "heic",
+    "avif",
+    "xwd",
+    "sgi",
+    "ras",
+    "pcx",
+    "psd",
+    "xbm",
+    "dds",
+    "exr",
+    "hdr",
+    "svg",
+    "pdf",
+    "apng",
+    "flif",
+    "yuv",
+    "rgb",
+    "gray",
+    "pal8",
+    "dicom",
+    "cr2",
+    "nef",
+    "arw",
+    "dng",
+    "fits",
+    "pam",
+    "cin",
+    "ptx",
+    "jxr",
+    "tdi",
+    "vbn",
+    "raf",
+    "rw2",
+    "pef",
+    "sr2",
+    "kdc",
+    "dcm",
+    "ima",
+    "sun",
+    "ilbm",
   ],
   "image/webp": [
     "jpeg",
@@ -324,16 +366,7 @@ export const CONVERSION_MAP: Record<string, string[]> = {
 
   // Audio Conversions
 
-  "audio/mpeg": [
-    "wav",
-    "ogg",
-    "aac",
-    "flac",
-    "opus",
-    "wma",
-    "aiff",
-    "ac3",
-  ],
+  "audio/mpeg": ["wav", "ogg", "aac", "flac", "opus", "wma", "aiff", "ac3"],
   "audio/wav": [
     "mp3",
     "wav",
@@ -514,6 +547,30 @@ export const CONVERSION_MAP: Record<string, string[]> = {
     "aiff",
     "ac3",
     "mp2",
+    "aac",
+    "m4a",
+    "mkv",
+    "mp4", // MPEG-4 (H.264/AVC, H.265/HEVC)
+    "3gp", // 3GPP mobile format
+    "mts", // AVCHD video (used in camcorders)
+    "m2ts", // Blu-ray BDAV format
+    "mxf", // Material Exchange Format (professional video)
+    "divx", // DivX video format
+    "rm", // RealMedia
+    "swf", // Adobe Flash format
+    "nut", // NUT open container format
+    "yuv", // Raw YUV video
+    "h264", // Raw H.264 elementary stream
+    "hevc", // Raw H.265/HEVC stream
+    "vc1", // SMPTE 421M (VC-1)
+    "drc", // Dynamic Range Control
+    "ivf", // IVF (VP8/VP9/AV1 container)
+    "dvh1", // DV video
+    "prores", // Apple ProRes
+    "dnxhd", // Avid DNxHD
+    "cineform", // GoPro CineForm
+    "screenpressor", // Screen recording format
+    "apng",
   ],
   "video/quicktime": ["mp4", "avi", "webm"],
   "video/x-msvideo": ["mp4", "mov", "webm"],
