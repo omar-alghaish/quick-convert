@@ -6,6 +6,11 @@ export const convertFile = async (file: File, targetFormat: string) => {
   const response = await fetch("http://localhost:5000/api/v1/files/convert", {
     method: "POST",
     body: formData,
+    headers: {
+      // "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FkMzQ2YjMzYjhkNTZlYzFmNzExODgiLCJpYXQiOjE3Mzk0MDQzOTUsImV4cCI6MTc0MTk5NjM5NX0.q9bwwdlhdKOJhUevjjmxsdTnKkOnNh4iwLTxbME2oH0",
+      "x-api-key":
+        "80c50c32352c9e7f8b30fd8426d12ff343574b7ab31decd3208f761cae177d5b",
+    },
   });
 
   if (!response.ok) {
@@ -18,8 +23,16 @@ export const convertFile = async (file: File, targetFormat: string) => {
 
 export const downloadFile = async (filename: string) => {
   const response = await fetch(
-    `http://localhost:5000/api/v1/files/download/${filename}`
+    `http://localhost:5000/api/v1/files/download/${filename}`,
+    {
+      headers: {
+        // "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FkMzQ2YjMzYjhkNTZlYzFmNzExODgiLCJpYXQiOjE3Mzk0MDQzOTUsImV4cCI6MTc0MTk5NjM5NX0.q9bwwdlhdKOJhUevjjmxsdTnKkOnNh4iwLTxbME2oH0",
+        "x-api-key":
+          "80c50c32352c9e7f8b30fd8426d12ff343574b7ab31decd3208f761cae177d5b",
+      },
+    }
   );
+  console.log(response);
   if (!response.ok) throw new Error("Download failed");
   return response.blob();
 };
